@@ -59,3 +59,11 @@ def plot_number_of_decompositions(lower_limit, upper_limit , function_of_x):
         P += point(Points[i], rgbcolor = C, size = S)
         
     return(P)
+
+###################################
+# Sample input
+
+a = (1+sqrt(5))/2
+f = (x/(a*pi))^(1/a)
+
+plot_number_of_decompositions(2, 1000 , f)
